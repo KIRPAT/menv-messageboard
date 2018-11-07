@@ -1,9 +1,18 @@
-# menv-barebone
-A barebone MongoDB-ExpressJS-NodeJS-VueJS app to start coding.
+# menv-messageboard
+A MongoDB-ExpressJS-NodeJS-VueJS messageboad app.
 
-Thanks https://github.com/CodingGarden for his awesome tutorial on
+Thanks CodingGarden for this awesome tutorial on
 https://www.youtube.com/watch?v=2xIoWm08SBM.
-This barebone is based on his work. 
+This app is based on it. I have used it tp practice coding a MENV app. 
 
 I have changed some stuff, please take a look at README files for each micro service. 
-Namely; client, server and database.
+Namely; client, server and database
+
+### You need a MongoDB database for this app. 
+Install it on your system. To start it, go to your prefered directory for your database.
+
+#### Run
+...
+mongod --dbpath <dbDirectory> --port <port>
+...
+
