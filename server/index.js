@@ -4,6 +4,9 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 
+//model import
+const messages = require('./models/messages')
+
 //express assignment
 const app = express();
 

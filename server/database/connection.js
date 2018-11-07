@@ -1,5 +1,4 @@
-const monk = require('monk');
-const connectionString =  environment.env.db;
-const db = monk(connectionString);
+const env = require('../../environment');
+const db = require('monk')(env.adrs.db.msg);
 
 module.exports = db;
