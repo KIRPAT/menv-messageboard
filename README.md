@@ -9,10 +9,11 @@ I have changed some stuff, please take a look at README files for each micro ser
 Namely; client, server and database
 
 ### You need a MongoDB database for this app. 
-Install it on your system. To start it, go to your prefered directory for your database.
+Install it on your system. To start it, go to your prefered directory and run the following command. MongoDB will automatically generate a database service for you and run it. You can use the same command to run existing servers. 
 
-#### Run
-...
-mongod --dbpath <dbDirectory> --port <port>
-...
+#### Start/Create MongoDB server
+```
+mongod --dbpath <yourDbDirectory> --port <yourPort>
+```
 
+  
