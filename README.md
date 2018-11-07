@@ -23,6 +23,6 @@ mongod --dbpath <yourDbDirectory> --port <yourPort>
 ```
 
 ### credits
-Thanks CodingGarden with CJ for this awesome tutorial on: https://www.youtube.com/watch?v=2xIoWm08SBM.
+Thanks CodingGarden with CJ for this awesome tutorial! * Check it on: https://www.youtube.com/watch?v=2xIoWm08SBM.
 
-I have used it to study MENV work flow. This app is primarily based on his tutorial. Some stuff has been changed and made easier to understand for beginners like myself.
+I have used it to study MENV work flow. This app is primarily based on his tutorial. I modified the app for my liking.  
