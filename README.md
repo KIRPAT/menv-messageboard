@@ -1,7 +1,7 @@
 # menv-messageboard
 A MongoDB-ExpressJS-NodeJS-VueJS messageboad app.
 
-This app is not monolithic like most of the web apps. Front-end and back-end are seperated. They are independant services. Which means, you can write yourself a mobile APP using the server API, and you don't have to touch on a single line of code from the client or the server. Cool, right? 
+This app is not monolithic like most of the web apps. Front-end and back-end are seperated. They are independant services. Which means, you can write yourself, for example, a mobile application using the server API. And you don't have to touch on a single line of code from the client or the server. Cool, right?
 
 ##### We have three services. 
 * Server: API routes, models, controller logic.
@@ -23,8 +23,8 @@ mongod --dbpath <yourDbDirectory> --port <yourPort>
 ```
 
 ### credits
-Thanks CodingGarden with CJ for this awesome tutorial!
+Thanks CodingGarden with CJ for his awesome tutorial!
 
-* Check it on: https://www.youtube.com/watch?v=2xIoWm08SBM.
+* Check it on: https://www.youtube.com/watch?v=2xIoWm08SBM
 
-I have used it to study MENV work flow. This app is primarily based on his tutorial. I modified the app for my liking.  
+I have used it to study MENV work flow. This app is primarily based on his tutorial, but I modified it for my own liking.  
