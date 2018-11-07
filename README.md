@@ -1,17 +1,17 @@
 # menv-messageboard
 A MongoDB-ExpressJS-NodeJS-VueJS messageboad app.
 
-This app has three services.
-Server: API routes, models, controller logic.
-Client: Client routes, styles, view templates, views.
-Database: MongoDB database. 
+This app is not monolithic like most of the web apps. Front-end and back-end are seperated. They are independant services. Which means, you can write yourself a mobile APP using the server API, and you don't have to touch on a single line of code from the client. Cool, right? 
 
-As you can see front-end and back-end are different micro services. 
+##### We have three services. 
+* Server: API routes, models, controller logic.
+* Client: Client routes, styles, view templates, views.
+* Database: MongoDB database.  
 
 ### environment.js variables 
-Please fill null fields of "const i". 
+Please fill the null fields on the "i" constant. 
 
-Try not to hard-code ports, adresses, etc. This makes the app more portable. 
+I try not to hard-code ports, adresses, etc. This makes the app more portable, but also, more volnurable. Make sure your environment.js file is not accessable by third parties.  
 
 ### you need a MongoDB database for this app 
 Install it on your system first.
@@ -23,10 +23,6 @@ mongod --dbpath <yourDbDirectory> --port <yourPort>
 ```
 
 ### credits
-Thanks CodingGarden for this awesome tutorial on https://www.youtube.com/watch?v=2xIoWm08SBM.
+Thanks CodingGarden with CJ for this awesome tutorial on: https://www.youtube.com/watch?v=2xIoWm08SBM.
 
-This app has been based on that tutorial. Some stuff has been changed and made easier to understand for beginners. Please take a look at README files for each micro service. 
-
-Namely; client, server. Databesa part has already been covered here. 
-
-  
+I have used it to study MENV work flow. This app is primarily based his tutorial. Some stuff has been changed and made easier to understand for beginners like myself.
