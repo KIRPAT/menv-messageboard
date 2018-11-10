@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-  <!--Router Links-->   
-    <router-view/>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#/">Full Stack Message Board</a>
+    </nav>
+    <router-view class="container"/>
   </div>
 </template>
 
-<!--Note: Delete default stiles after importing a bootstrap lib.-->
 <style>
 </style>

@@ -1,5 +1,5 @@
-//I prefer not to hard code variables.
 //Please write your own ports and variables here. 
+//I prefer not to hard code variables.
 const i = {
     port: {
     server: '4789',
@@ -25,6 +25,7 @@ plug and play. You can of course, export "i" and keep
 the stuff you are calling from here easy to remember.*/    
 const env = {
     adrs :{
+        //instead of "local", you might wanna use "cstm1" etc. here
         srv  : i.host.local+":"+i.port.server,
         clnt : i.host.local+":"+i.port.client,
         db   : {
