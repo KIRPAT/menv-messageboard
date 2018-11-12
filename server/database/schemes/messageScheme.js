@@ -10,7 +10,7 @@ const messageSchema = Joi.object().keys({
       scheme: [
         /https?/
       ]
-    })
+    }).optional()
 });
 
 module.exports = messageSchema;

@@ -36,7 +36,7 @@ const adrsServer = i.misc.http + i.host.local + ':' + i.port.server
 
 //API END-POINTS
 const api = {
-  getMessages: adrsServer+'/messages',
+  getMessages: adrsServer+'/message',
 }
 
 module.exports = api;

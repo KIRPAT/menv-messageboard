@@ -38,7 +38,7 @@ const env = {
         srv  : i.port.server,
         clnt : i.port.clnt,
         db   : i.port.database 
-    },
+    }, 
 };
 
 module.exports = env;

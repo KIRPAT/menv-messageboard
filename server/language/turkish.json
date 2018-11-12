@@ -1,0 +1,10 @@
+{
+    "frm": {
+       "usrnm":        "Kullanıcı Adı",
+       "usrnmPlchldr": "Anonim",
+       "sbjkt":        "Konu",
+       "sbjktPlchldr": "Mesajınızın konusu nedir?",
+       "msg":          "Mesaj",
+       "msgPlchldr":   "Derdini anlat, internet derman olsun." 
+    }
+}
