@@ -25,8 +25,8 @@ const messageSchema = Joi.object().keys({
 
 
 const db  = require('../database/connection');
-const Joi = require('joi');
-const messageSchema = require('../database/schemes/messageScheme')
+const Joi = require('joi'); //Even though schemes are no longer here, we still need Joi for validations.
+const messageScheme = require('../database/schemes/messageScheme')
 const messages = db.get('messages');
 
 ////////////////////////
@@ -44,7 +44,7 @@ function create(message) {
     message.username = 'Anonymous';
   };
   //Validates the JSON according to scheme
-  const result = Joi.validate(message, messageSchema);
+  const result = Joi.validate(message, messageScheme);
   //If result is true, creates a message, else throws an error.
   if (result.error == null) {
     message.created = new Date(); 

@@ -1,13 +1,13 @@
-# menv-messageboard client 
+# menv-messageboard client (WIP) 
  
  ## generating the vue project
-**You can skip this part**, the "client" has already been created. Still, if you wanna know how that happened, read on!
+**You can skip this part**, the "*client*" has already been created. Still, if you wanna know how that happened, read on!
 
- Get into your project folder and run the following command.
+ To install a fresh instance of a vue project with the way we created it in the first place, get into your preferred project folder and run the following command.
  ```
  npx @vue/cli create <project-name>
  ```
-***in the presets menu, select the following for each step (hit spacebar to select mark stuff)***
+*This is the vue-cli v3.0. (Check [here](https://cli.vuejs.org/guide/) for the most up to date vue-cli information.) In the presets menu, select the following for each step. Hit spacebar to select stuff.*
 * **Please pick a preset:** Manually select features.
 * **Check the feature needed for your project:** Router, Linter / Formatter
 * **Pick a linter / formatter config:** ESLint + Airbnb config
@@ -15,7 +15,7 @@
 * **Where do you prefer placing config for Babel, PostCSS,ESLint, etc.?** In package.json
 * **Save this as a preset for future projects** y or n (up to you)
 
-## project setup (run this once after pulling this project to install necessary dependencies)
+## project setup (run this once to install necessary dependencies)
 ```
 npm install
 ```

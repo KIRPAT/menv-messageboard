@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
   //Then, we can do the database insertion.
   messages.create(req.body)
   .then((message) => {
-       res.json(message);
+       res.json(message); //save the request body into "message" variable
   })
   .catch((error) => {
   res.status(500);
