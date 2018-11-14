@@ -1,7 +1,7 @@
 # menv-messageboard (DEV-BRANCH)
 A MongoDB-ExpressJS-NodeJS-VueJS messageboad app.
 
-This app is not monolithic like most of the web apps. Front-end and back-end are seperated. They are independant services. Which means, you can write yourself, for example, a mobile application using the server API. And you don't have to touch on a single line of code from the client or the server. Cool, right?
+This app is not monolithic like most of the web apps. Front-end and back-end are seperated. They are independant services. Which means, you can write yourself, for example, a mobile application using the ***server***, our API. And you don't have to touch on a single line of code from the client or the server. (Ok, maybe you can do a little more routing for mobile needs.) Cool, right?
 
 **Note:** This project has been written without caring about the ***design patterns.*** After finishing up everything, we will focus on that, and gonna release it on a different branch. 
 
