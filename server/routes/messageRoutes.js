@@ -15,31 +15,38 @@ const express = require('express');
 const router = express.Router(); 
 
 //model import
-const messages = require('../models/messageModel')
+const messageModel = require('../models/messageModel')
 
 ////////////
 ///ROUTES///
 
 // GET - Gets all messages.(We will work on this later. I mean... ALL MESSAGES!!! We need an Ajax code here.)
 router.get('/', (req, res) => {
-    messages.getAll().then(messages => {
+    messageModel.getAll()
+    .then(messages => {
       res.json(messages);
     });
   });
 
 // POST - Posts/Inserts a message into the database
-router.post('/', (req, res) => {
-  //Let's log the incoming message content.  
+router.post('/', (req, res) => {  
   console.log(req.body);
-  //Then, we can do the database insertion.
-  messages.create(req.body)
-  .then((message) => {
-       res.json(message); //save the request body into "message" variable
+  messageModel.create(req.body)
+  .then(response => {
+    res.json(response); //save the create operations response into "response" variable
   })
   .catch((error) => {
   res.status(500);
   res.json(error);
   });
+});
+
+// PATCH - Updates an existing message.
+router.patch('/', (req, res) => {
+  console.log(req.body);
+  messageModel.update(req.body)
+  .then(response => res.json(response))
+  .catch(error => {res.status(500); res.json(error)}) 
 });
 
 /////END/////

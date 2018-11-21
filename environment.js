@@ -1,5 +1,7 @@
 //Please write your own ports and variables here. 
 //I prefer not to hard code variables.
+
+//Connection String Building Blocks
 const i = {
     port: {
     server: '4789',
@@ -13,16 +15,13 @@ const i = {
         //You can add more...
     },
     dbName: {
-        db1: 'messages',
+        db1: 'messageBoard',
         db2: 'users',
         db3: ''
     }
 };
 
-/*I will be exporting only "env" from here.
-I want the connection names shorter, and feel like 
-plug and play. You can of course, export "i" and keep
-the stuff you are calling from here easy to remember.*/    
+// Easy way!
 const env = {
     adrs :{
         //instead of "local", you might wanna use "cstm1" etc. here
