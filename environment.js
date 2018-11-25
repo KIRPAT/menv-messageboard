@@ -23,6 +23,7 @@ const i = {
 
 // Easy way!
 const env = {
+    //connection addresses and ports
     adrs :{
         //instead of "local", you might wanna use "cstm1" etc. here
         srv  : i.host.local+":"+i.port.server,
@@ -37,7 +38,7 @@ const env = {
         srv  : i.port.server,
         clnt : i.port.clnt,
         db   : i.port.database 
-    }, 
+    },
 };
 
 module.exports = env;
